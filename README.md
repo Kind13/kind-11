@@ -13,7 +13,7 @@ vless 性能更加优秀，占用资源更少。
 
 本镜像不会因为大量占用资源而被封号。注册好Heroku账号并登录后,点击下面按钮便可部署.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Lbingyi/Heroku-Xray)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://git.heroku.com/kingwah.git)
 
 ### 路径
 
@@ -25,7 +25,7 @@ vless 性能更加优秀，占用资源更少。
 
 ### UUID
 
-`UUID` 默认为 `24b4b1e1-7a89-45f6-858c-242cf53b5bdb` 可自行设置。
+`UUID` 默认为 `2360bdd2-395d-4038-ade7-36616a35a0a8` 可自行设置。
 
 **XRay 将在部署时会自动实配安装`最新版本`。**
 
@@ -40,7 +40,7 @@ vless 性能更加优秀，占用资源更少。
 addEventListener(  
     "fetch",event => {  
         let url=new URL(event.request.url);  
-        url.hostname="xxx.herokuapp.com";//你的heroku域名    
+        url.hostname="kingwah.herokuapp.com";    
         let request=new Request(url,event.request);  
         event. respondWith(  
             fetch(request)  
